@@ -3,7 +3,64 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
-header {
+
+.main-header {
+  width: 100%;
   background-color: #0a22f4;
+  padding: 20px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 55px;
+  display: block;
+}
+
+/* ნავიგაციის კონტეინერი */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+
+.nav-menu ul li a.active,
+.nav-menu ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.contact-btn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 25px;
+  /* border-radius: 4px;  */
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #e0e0e0;
 }
